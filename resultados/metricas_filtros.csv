@@ -1,0 +1,7 @@
+﻿filtro,metodo,objetivo_hz,corte_hz,snr_entrada_db,snr_salida_db,mejora_snr_db,amplitud_objetivo_entrada,amplitud_objetivo_salida,amplitud_15hz_salida,amplitud_80hz_salida,amplitud_220hz_salida
+pasa_bajos,IIR Butterworth,15,35,-0.98,17.081,18.061,0.9074,0.9073,0.9073,0.0002,0.0001
+pasa_bajos,FIR Hamming,15,35,-0.98,17.064,18.044,0.9074,0.9061,0.9061,0.0002,0.0001
+pasa_altos,IIR Butterworth,220,150,-7.084,2.649,9.733,0.5409,0.5394,0.0001,0.0003,0.5394
+pasa_altos,FIR Hamming,220,150,-7.084,2.531,9.615,0.5409,0.5412,0.0001,0.0001,0.5412
+pasa_bandas,IIR Butterworth,80,"[60, 105]",-4.434,13.492,17.926,0.6914,0.6907,0.0001,0.6907,0.0
+pasa_bandas,FIR Hamming,80,"[60, 105]",-4.434,13.638,18.072,0.6914,0.6874,0.0001,0.6874,0.0

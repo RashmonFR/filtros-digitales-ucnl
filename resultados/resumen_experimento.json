@@ -1,0 +1,110 @@
+{
+  "fs_hz": 1000,
+  "duracion_s": 4.0,
+  "frecuencias_hz": [
+    15.0,
+    80.0,
+    220.0
+  ],
+  "amplitudes": [
+    0.9,
+    0.7,
+    0.55
+  ],
+  "ruido_std": 0.35,
+  "semilla": 2026,
+  "iir_orden": 6,
+  "fir_taps": 301,
+  "chebyshev": {
+    "orden": 6,
+    "rizado_pasobanda_db": 0.5,
+    "snr_entrada_db": -0.98,
+    "snr_chebyshev_db": 15.916
+  },
+  "metricas": [
+    {
+      "filtro": "pasa_bajos",
+      "metodo": "IIR Butterworth",
+      "objetivo_hz": 15,
+      "corte_hz": "35",
+      "snr_entrada_db": -0.98,
+      "snr_salida_db": 17.081,
+      "mejora_snr_db": 18.061,
+      "amplitud_objetivo_entrada": 0.9074,
+      "amplitud_objetivo_salida": 0.9073,
+      "amplitud_15hz_salida": 0.9073,
+      "amplitud_80hz_salida": 0.0002,
+      "amplitud_220hz_salida": 0.0001
+    },
+    {
+      "filtro": "pasa_bajos",
+      "metodo": "FIR Hamming",
+      "objetivo_hz": 15,
+      "corte_hz": "35",
+      "snr_entrada_db": -0.98,
+      "snr_salida_db": 17.064,
+      "mejora_snr_db": 18.044,
+      "amplitud_objetivo_entrada": 0.9074,
+      "amplitud_objetivo_salida": 0.9061,
+      "amplitud_15hz_salida": 0.9061,
+      "amplitud_80hz_salida": 0.0002,
+      "amplitud_220hz_salida": 0.0001
+    },
+    {
+      "filtro": "pasa_altos",
+      "metodo": "IIR Butterworth",
+      "objetivo_hz": 220,
+      "corte_hz": "150",
+      "snr_entrada_db": -7.084,
+      "snr_salida_db": 2.649,
+      "mejora_snr_db": 9.733,
+      "amplitud_objetivo_entrada": 0.5409,
+      "amplitud_objetivo_salida": 0.5394,
+      "amplitud_15hz_salida": 0.0001,
+      "amplitud_80hz_salida": 0.0003,
+      "amplitud_220hz_salida": 0.5394
+    },
+    {
+      "filtro": "pasa_altos",
+      "metodo": "FIR Hamming",
+      "objetivo_hz": 220,
+      "corte_hz": "150",
+      "snr_entrada_db": -7.084,
+      "snr_salida_db": 2.531,
+      "mejora_snr_db": 9.615,
+      "amplitud_objetivo_entrada": 0.5409,
+      "amplitud_objetivo_salida": 0.5412,
+      "amplitud_15hz_salida": 0.0001,
+      "amplitud_80hz_salida": 0.0001,
+      "amplitud_220hz_salida": 0.5412
+    },
+    {
+      "filtro": "pasa_bandas",
+      "metodo": "IIR Butterworth",
+      "objetivo_hz": 80,
+      "corte_hz": "[60, 105]",
+      "snr_entrada_db": -4.434,
+      "snr_salida_db": 13.492,
+      "mejora_snr_db": 17.926,
+      "amplitud_objetivo_entrada": 0.6914,
+      "amplitud_objetivo_salida": 0.6907,
+      "amplitud_15hz_salida": 0.0001,
+      "amplitud_80hz_salida": 0.6907,
+      "amplitud_220hz_salida": 0.0
+    },
+    {
+      "filtro": "pasa_bandas",
+      "metodo": "FIR Hamming",
+      "objetivo_hz": 80,
+      "corte_hz": "[60, 105]",
+      "snr_entrada_db": -4.434,
+      "snr_salida_db": 13.638,
+      "mejora_snr_db": 18.072,
+      "amplitud_objetivo_entrada": 0.6914,
+      "amplitud_objetivo_salida": 0.6874,
+      "amplitud_15hz_salida": 0.0001,
+      "amplitud_80hz_salida": 0.6874,
+      "amplitud_220hz_salida": 0.0
+    }
+  ]
+}
